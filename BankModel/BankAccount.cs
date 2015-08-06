@@ -17,6 +17,10 @@ namespace BankModel
             set { this.id = value; }
         }
 
+        /// <summary>
+        /// Para depositar dinero
+        /// </summary>
+        /// <param name="amount">Cantidad a depositar</param>
         public virtual void Deposit(double amount)
         {
             this.balance += amount;
